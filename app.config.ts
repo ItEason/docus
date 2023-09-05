@@ -34,7 +34,7 @@ export default defineAppConfig({
       logo: true,
       exclude: [],
       showLinkIcon: true,
-      fluid: false
+      fluid: true
     }
   }
 })
