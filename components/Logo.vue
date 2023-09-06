@@ -1,7 +1,7 @@
 <template>
     <img src="/img/logo.png" />
 </template>
-<style>
+<style scoped>
 img {
     width: 60px;
     height: 100% !important;
