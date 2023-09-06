@@ -7,11 +7,6 @@ export default defineAppConfig({
     socials: {
       twitter: 'nuxt_js',
       github: 'nuxt-themes/docus',
-      nuxt: {
-        label: 'Nuxt',
-        icon: 'simple-icons:nuxtdotjs',
-        href: 'https://nuxt.com'
-      }
     },
     github: {
       dir: '.starters/default/content',
