@@ -1,20 +1,35 @@
 <template lang="">
     <div id="app">
-        <header>
-            <Logo/>
-        </header>
+        <Logo/>
         <main class="main">
             <ContentDoc />
+            <Box></Box>
          </main>
     </div>
 </template>
 <script lang="ts" setup>
-import Logo from './components/Logo.vue';
+// import Logo from './components/Logo.vue';
+
 </script>
-<style scoped>
+<style >
+* {
+    user-select: none;
+
+}
+
 #app {
     width: 100%;
     margin: auto;
+}
+
+.title {
+    font-size: var(--text-4xl-fontSize);
+    line-height: var(--text-4xl-lineHeight);
+    font-size: var(--text-3xl-fontSize);
+    line-height: var(--text-3xl-lineHeight);
+    font-weight: var(--fontWeight-bold);
+    letter-spacing: var(--letterSpacing-tight);
+    color: var(--elements-text-primary-color-static);
 }
 
 .main {
