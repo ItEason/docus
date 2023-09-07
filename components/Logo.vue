@@ -2,7 +2,7 @@
     <div id="header">
         <div class="text">
             <div><img src="/img/logo.png" /></div>
-            <h2 class="title">新旦智能</h2>
+            <h2 class="title">xDAN -AI</h2>
         </div>
         <div class="icons">
             <div @click="toGithub">
@@ -53,7 +53,7 @@ const toTwitter = () => {
 
 
 .text {
-    width: 200px;
+    width: 250px;
     display: flex;
     flex-direction: row;
     justify-content: left;

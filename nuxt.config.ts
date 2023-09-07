@@ -15,4 +15,6 @@ export default defineNuxtConfig({
     '@nuxt/devtools',
     '@nuxt/content'
   ],
+  plugins: [
+  ]
 })

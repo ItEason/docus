@@ -1,15 +1,23 @@
 <template lang="">
     <div id="app">
-        <Logo/>
+        <Logo></Logo>
         <main class="main">
+            <Swiper/>
             <ContentDoc />
             <Box></Box>
          </main>
     </div>
 </template>
-<script lang="ts" setup>
-// import Logo from './components/Logo.vue';
-
+<script>
+import Logo from '@/components/Logo.vue'
+import Swiper from './components/Swiper.vue';
+export default {
+    components: {
+        Logo,
+        Swiper
+    },
+    // ...其他配置
+}
 </script>
 <style >
 * {
@@ -33,7 +41,7 @@
 }
 
 .main {
-    width: 50vw;
+    width: 55vw;
     height: 100%;
     margin: auto;
 }
