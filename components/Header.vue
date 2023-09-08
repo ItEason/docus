@@ -1,7 +1,8 @@
 <template>
     <div class="container">
-        <swiper :navigation="true" :autoplay="{ delay: 3000, autoplay: true }" :slides-per-view="1" :space-between="50"
-            :modules="modules" class="mySwiper">
+        <swiper :navigation="true"
+            :autoplay="{ delay: 3000, autoplay: true, stopOnLastSlide: false, disableOnInteraction: false }"
+            :slides-per-view="1" :space-between="50" :modules="modules" class="mySwiper">
             <swiper-slide class="slide" v-for="slide in slides">
                 <div class="swiper-item">
                     <div v-if="slide.title" class="title">{{ slide.title }}</div>
