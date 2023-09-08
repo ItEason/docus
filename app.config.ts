@@ -1,4 +1,7 @@
 export default defineAppConfig({
+  theme: {
+    primaryColor: '#ababab'
+  },
   docus: {
     title: '新旦智能',
     description: 'The best place to start your documentation.11',

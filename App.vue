@@ -2,19 +2,24 @@
     <div id="app">
         <Logo></Logo>
         <main class="main">
-            <Swiper/>
+            <Header />
             <ContentDoc />
             <Box></Box>
+            <Slider/>
          </main>
     </div>
 </template>
 <script>
 import Logo from '@/components/Logo.vue'
-import Swiper from './components/Swiper.vue';
+import Header from './components/Header.vue';
+import Slider from './components/Slider.vue';
+
+
 export default {
     components: {
         Logo,
-        Swiper
+        Header,
+        Slider
     },
     // ...其他配置
 }

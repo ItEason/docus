@@ -5,6 +5,19 @@
             <h2 class="title">xDAN -AI</h2>
         </div>
         <div class="icons">
+            <div @click="toDocument">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 36 36">
+                    <path fill="#000000"
+                        d="M31 10H13a1 1 0 0 0-1 1v22a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V11a1 1 0 0 0-1-1Zm-3 16H16v-2h12Zm0-4H16v-2h12Zm0-4H16v-2h12Z"
+                        class="clr-i-solid clr-i-solid-path-1" />
+                    <path fill="#000000" d="M6 24V4h18V3a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v22a1 1 0 0 0 1 1h1Z"
+                        class="clr-i-solid clr-i-solid-path-2" />
+                    <path fill="#000000" d="M10 28V8h18V7a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v22a1 1 0 0 0 1 1h1Z"
+                        class="clr-i-solid clr-i-solid-path-3" />
+                    <path fill="none" d="M0 0h36v36H0z" />
+                </svg>
+            </div>
+
             <div @click="toGithub">
                 <svg class="github" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32">
                     <path fill="currentColor" fillRule="evenodd"
@@ -25,12 +38,16 @@
 
 <script lang="ts" setup>
 
+const toDocument = () => {
+    alert("document")
+}
+
 const toGithub = () => {
-    alert("aaaa")
+    alert("github")
 }
 
 const toTwitter = () => {
-    alert("bbb");
+    alert("twitter");
 }
 
 </script>
@@ -67,6 +84,7 @@ const toTwitter = () => {
     justify-content: space-around;
     align-items: center;
     min-width: 150px;
+    gap: 20px;
 
     .github,
     .twitter {
